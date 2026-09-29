@@ -1,14 +1,23 @@
-/* CONFIGURACIÓN GENERAL */
+/* =========================
+   CONFIGURACIÓN GENERAL
+   ========================= */
 
 * {
     box-sizing: border-box;
 }
 
+
 body {
     margin: 0;
+
     background-color: #f5f1eb;
+
     color: #29251f;
-    font-family: Georgia, "Times New Roman", serif;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
 }
 
 
@@ -17,21 +26,29 @@ body {
    ========================= */
 
 .inicio {
+
     min-height: 100vh;
 
     display: flex;
+
     justify-content: center;
+
     align-items: center;
 
     text-align: center;
 }
 
+
 .portada {
+
     max-width: 700px;
+
     padding: 40px;
 }
 
+
 .portada h1 {
+
     font-size: 70px;
 
     letter-spacing: 12px;
@@ -41,7 +58,9 @@ body {
     margin-bottom: 35px;
 }
 
+
 .frase {
+
     font-size: 27px;
 
     line-height: 1.6;
@@ -49,16 +68,20 @@ body {
     margin-bottom: 55px;
 }
 
+
 .frase strong {
+
     font-weight: normal;
 }
 
 
+
 /* =========================
-   ENTRAR A ALTHEA
+   BOTÓN ENTRAR
    ========================= */
 
 .entrar {
+
     display: inline-block;
 
     color: #29251f;
@@ -72,9 +95,12 @@ body {
     transition: 0.3s;
 }
 
+
 .entrar:hover {
+
     opacity: 0.5;
 }
+
 
 
 /* =========================
@@ -82,13 +108,13 @@ body {
    ========================= */
 
 .experiencia {
+
     min-height: 100vh;
 }
 
 
-/* CADA PREGUNTA */
-
 .pregunta {
+
     min-height: 100vh;
 
     display: none;
@@ -96,6 +122,7 @@ body {
     flex-direction: column;
 
     justify-content: center;
+
     align-items: center;
 
     text-align: center;
@@ -104,23 +131,20 @@ body {
 }
 
 
-/* Mostrar la pregunta seleccionada */
-
 .pregunta:target {
+
     display: flex;
 }
 
-
-/* Primera pregunta */
 
 .pregunta.activa {
+
     display: flex;
 }
 
 
-/* ALTHEA pequeño */
-
 .pequeno {
+
     font-size: 13px;
 
     letter-spacing: 5px;
@@ -129,9 +153,8 @@ body {
 }
 
 
-/* TÍTULO DE LAS PREGUNTAS */
-
 .pregunta h1 {
+
     font-size: 42px;
 
     font-weight: normal;
@@ -142,9 +165,8 @@ body {
 }
 
 
-/* TEXTO */
-
 .pregunta > p:not(.pequeno) {
+
     max-width: 550px;
 
     font-size: 19px;
@@ -155,11 +177,13 @@ body {
 }
 
 
+
 /* =========================
    OPCIONES
    ========================= */
 
 .opciones {
+
     display: flex;
 
     flex-wrap: wrap;
@@ -173,6 +197,7 @@ body {
 
 
 .opciones a {
+
     text-decoration: none;
 
     color: #29251f;
@@ -185,36 +210,717 @@ body {
 }
 
 
-/* Cuando pasas el mouse */
-
 .opciones a:hover {
+
     background-color: #29251f;
 
     color: #f5f1eb;
 }
 
 
+
 /* =========================
-   CELULARES
+   PÁGINA DE LIBROS
+   ========================= */
+
+.pagina-libros {
+
+    background: #f5f1eb;
+
+    color: #29251f;
+}
+
+
+
+/* =========================
+   MENÚ
+   ========================= */
+
+.menu {
+
+    height: 80px;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    padding: 0 7%;
+
+    border-bottom: 1px solid #ded9d1;
+}
+
+
+.logo {
+
+    color: #29251f;
+
+    text-decoration: none;
+
+    font-size: 23px;
+
+    letter-spacing: 6px;
+}
+
+
+.enlaces {
+
+    display: flex;
+
+    gap: 30px;
+}
+
+
+.enlaces a {
+
+    color: #706a61;
+
+    text-decoration: none;
+
+    font-size: 15px;
+}
+
+
+.enlaces a:hover {
+
+    color: #29251f;
+}
+
+
+.seleccionado {
+
+    color: #29251f !important;
+
+    border-bottom: 1px solid #29251f;
+
+    padding-bottom: 5px;
+}
+
+
+
+/* =========================
+   ENCABEZADO
+   ========================= */
+
+.encabezado-libros {
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 90px 7% 70px;
+}
+
+
+.etiqueta {
+
+    font-size: 11px;
+
+    letter-spacing: 4px;
+
+    color: #817a70;
+}
+
+
+.encabezado-libros h1 {
+
+    font-size: 60px;
+
+    font-weight: normal;
+
+    line-height: 1.1;
+
+    margin: 25px 0;
+}
+
+
+.descripcion {
+
+    max-width: 500px;
+
+    color: #706a61;
+
+    font-size: 18px;
+
+    line-height: 1.6;
+}
+
+
+
+/* =========================
+   CATÁLOGO
+   ========================= */
+
+.catalogo {
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 0 7% 100px;
+}
+
+
+.titulo-catalogo {
+
+    border-top: 1px solid #ded9d1;
+
+    padding-top: 20px;
+
+    margin-bottom: 45px;
+}
+
+
+.titulo-catalogo p {
+
+    font-size: 11px;
+
+    letter-spacing: 3px;
+
+    color: #817a70;
+}
+
+
+
+/* =========================
+   BUSCADOR
+   ========================= */
+
+.buscador {
+
+    width: 100%;
+
+    max-width: 650px;
+
+    margin: 0 auto 70px;
+
+    text-align: center;
+}
+
+
+.buscador p {
+
+    font-size: 10px;
+
+    letter-spacing: 4px;
+
+    color: #817a70;
+
+    margin: 0 0 20px;
+}
+
+
+.buscador input {
+
+    width: 100%;
+
+    background: transparent;
+
+    border: none;
+
+    border-bottom: 1px solid #aaa297;
+
+    padding: 15px 5px;
+
+    font-family:
+        Georgia,
+        "Times New Roman",
+        serif;
+
+    font-style: italic;
+
+    font-size: 19px;
+
+    color: #29251f;
+
+    outline: none;
+
+    transition: border-color 0.4s;
+}
+
+
+.buscador input::placeholder {
+
+    color: #aaa297;
+
+    font-style: italic;
+}
+
+
+.buscador input:focus {
+
+    border-bottom-color: #29251f;
+}
+
+
+.buscador input:focus::placeholder {
+
+    opacity: 0.4;
+}
+
+
+
+/* =========================
+   CUADRÍCULA
+   ========================= */
+
+.libros {
+
+    display: grid;
+
+    grid-template-columns:
+        repeat(2, minmax(0, 1fr));
+
+    gap: 75px 45px;
+}
+
+
+
+/* =========================
+   TARJETA
+   ========================= */
+
+.libro {
+
+    min-width: 0;
+
+    animation: aparecer 0.35s ease;
+}
+
+
+@keyframes aparecer {
+
+    from {
+
+        opacity: 0;
+
+        transform: translateY(8px);
+
+    }
+
+    to {
+
+        opacity: 1;
+
+        transform: translateY(0);
+
+    }
+}
+
+
+
+/* =========================
+   PORTADA
+   ========================= */
+
+.enlace-portada {
+
+    width: 100%;
+
+    height: 430px;
+
+    background: #ebe6de;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    text-decoration: none;
+
+    padding: 35px;
+
+    overflow: hidden;
+}
+
+
+.enlace-portada img {
+
+    max-width: 72%;
+
+    max-height: 360px;
+
+    width: auto;
+
+    height: auto;
+
+    object-fit: contain;
+
+    box-shadow:
+        0 15px 30px rgba(0, 0, 0, 0.15);
+
+    transition:
+        transform 0.4s ease;
+}
+
+
+.enlace-portada:hover img {
+
+    transform: scale(1.03);
+}
+
+
+
+/* =========================
+   INFORMACIÓN
+   ========================= */
+
+.informacion {
+
+    padding-top: 20px;
+}
+
+
+.genero {
+
+    font-size: 10px;
+
+    letter-spacing: 3px;
+
+    color: #8a8278;
+}
+
+
+.informacion h2 {
+
+    font-size: 24px;
+
+    font-weight: normal;
+
+    line-height: 1.3;
+
+    margin: 10px 0 5px;
+}
+
+
+.autor {
+
+    color: #777067;
+
+    margin-top: 0;
+}
+
+
+
+/* =========================
+   PRECIO
+   ========================= */
+
+.detalle {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+    gap: 20px;
+
+    border-top: 1px solid #ded9d1;
+
+    margin-top: 20px;
+
+    padding-top: 15px;
+}
+
+
+.detalle span {
+
+    font-size: 15px;
+
+    white-space: nowrap;
+}
+
+
+.detalle a {
+
+    color: #29251f;
+
+    text-decoration: none;
+
+    border-bottom: 1px solid #29251f;
+
+    padding-bottom: 5px;
+
+    transition: 0.3s;
+}
+
+
+.detalle a:hover {
+
+    opacity: 0.5;
+}
+
+
+
+/* =========================
+   DETALLE DEL LIBRO
+   ========================= */
+
+.pagina-libro {
+
+    background: #f5f1eb;
+
+    color: #29251f;
+}
+
+
+.detalle-libro {
+
+    max-width: 1100px;
+
+    margin: auto;
+
+    padding: 80px 7%;
+
+    display: grid;
+
+    grid-template-columns:
+        0.9fr 1.1fr;
+
+    gap: 80px;
+
+    align-items: center;
+}
+
+
+.imagen-detalle {
+
+    background: #ebe6de;
+
+    height: 600px;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    overflow: hidden;
+}
+
+
+.imagen-detalle img {
+
+    max-width: 82%;
+
+    max-height: 520px;
+
+    width: auto;
+
+    height: auto;
+
+    object-fit: contain;
+
+    box-shadow:
+        0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+
+.contenido-detalle {
+
+    max-width: 480px;
+}
+
+
+.contenido-detalle h1 {
+
+    font-size: 55px;
+
+    font-weight: normal;
+
+    line-height: 1.05;
+
+    margin: 25px 0 15px;
+}
+
+
+.autor-detalle {
+
+    color: #706a61;
+
+    font-size: 18px;
+}
+
+
+.descripcion-libro {
+
+    color: #706a61;
+
+    font-size: 18px;
+
+    line-height: 1.7;
+
+    margin: 35px 0;
+}
+
+
+.precio-detalle {
+
+    font-size: 20px;
+
+    margin-bottom: 25px;
+}
+
+
+.comprar-detalle {
+
+    background: #29251f;
+
+    color: #f5f1eb;
+
+    border: none;
+
+    padding: 15px 35px;
+
+    font-family: Georgia, serif;
+
+    font-size: 15px;
+
+    cursor: pointer;
+}
+
+
+.comprar-detalle:hover {
+
+    opacity: 0.8;
+}
+
+
+.volver {
+
+    display: block;
+
+    margin-top: 25px;
+
+    color: #706a61;
+
+    text-decoration: none;
+
+    font-size: 14px;
+}
+
+
+.volver:hover {
+
+    color: #29251f;
+}
+
+
+
+/* =========================
+   TABLETS Y CELULARES
+   ========================= */
+
+@media (max-width: 700px) {
+
+
+    .libros {
+
+        grid-template-columns: 1fr;
+
+        gap: 60px;
+    }
+
+
+    .encabezado-libros {
+
+        padding-top: 60px;
+    }
+
+
+    .encabezado-libros h1 {
+
+        font-size: 45px;
+    }
+
+
+    .menu {
+
+        padding: 0 25px;
+    }
+
+
+    .enlaces {
+
+        gap: 18px;
+    }
+
+
+    .enlace-portada {
+
+        height: 430px;
+    }
+
+
+    .enlace-portada img {
+
+        max-width: 72%;
+
+        max-height: 360px;
+    }
+
+
+    .detalle-libro {
+
+        grid-template-columns: 1fr;
+
+        gap: 40px;
+    }
+
+
+    .imagen-detalle {
+
+        height: 450px;
+    }
+
+
+    .imagen-detalle img {
+
+        max-height: 380px;
+    }
+
+
+    .contenido-detalle h1 {
+
+        font-size: 42px;
+    }
+
+}
+
+
+
+/* =========================
+   CELULARES PEQUEÑOS
    ========================= */
 
 @media (max-width: 600px) {
 
+
     .portada h1 {
+
         font-size: 45px;
 
         letter-spacing: 7px;
     }
 
+
     .frase {
+
         font-size: 21px;
     }
 
+
     .pregunta h1 {
+
         font-size: 30px;
     }
 
+
     .opciones {
+
         flex-direction: column;
 
         width: 100%;
@@ -222,458 +928,26 @@ body {
         max-width: 350px;
     }
 
+
     .opciones a {
+
         width: 100%;
     }
 
-}
 
-/* MENÚ ALTHEA */
+    .buscador {
 
-.pagina-libros {
-    background: #f5f1eb;
-    color: #29251f;
-}
-
-.menu {
-    height: 80px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 7%;
-    border-bottom: 1px solid #ded9d1;
-}
-
-.logo {
-    color: #29251f;
-    text-decoration: none;
-    font-size: 23px;
-    letter-spacing: 6px;
-}
-
-.enlaces {
-    display: flex;
-    gap: 30px;
-}
-
-.enlaces a {
-    color: #706a61;
-    text-decoration: none;
-    font-size: 15px;
-}
-
-.enlaces a:hover {
-    color: #29251f;
-}
-
-.seleccionado {
-    color: #29251f !important;
-    border-bottom: 1px solid #29251f;
-    padding-bottom: 5px;
-}
-
-.encabezado-libros {
-    max-width: 1100px;
-    margin: auto;
-    padding: 90px 7% 70px;
-}
-
-.etiqueta {
-    font-size: 11px;
-    letter-spacing: 4px;
-    color: #817a70;
-}
-
-.encabezado-libros h1 {
-    font-size: 60px;
-    font-weight: normal;
-    line-height: 1.1;
-    margin: 25px 0;
-}
-
-.descripcion {
-    max-width: 500px;
-    color: #706a61;
-    font-size: 18px;
-    line-height: 1.6;
-}
-
-.catalogo {
-    max-width: 1100px;
-    margin: auto;
-    padding: 0 7% 100px;
-}
-
-.titulo-catalogo {
-    border-top: 1px solid #ded9d1;
-    padding-top: 20px;
-    margin-bottom: 45px;
-}
-
-.titulo-catalogo p {
-    font-size: 11px;
-    letter-spacing: 3px;
-    color: #817a70;
-}
-
-.libros {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 60px 35px;
-}
-
-.portada {
-    height: 450px;
-    background: #ebe6de;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.portada img {
-    height: 380px;
-    max-width: 80%;
-    object-fit: contain;
-    box-shadow: 0 15px 30px rgba(0,0,0,.15);
-    transition: .4s;
-}
-
-.libro:hover img {
-    transform: scale(1.03);
-}
-
-.informacion {
-    padding-top: 20px;
-}
-
-.genero {
-    font-size: 10px;
-    letter-spacing: 3px;
-    color: #8a8278;
-}
-
-.informacion h2 {
-    font-size: 24px;
-    font-weight: normal;
-    margin: 10px 0 5px;
-}
-
-.autor {
-    color: #777067;
-}
-
-.detalle {
-    display: flex;
-    justify-content: space-between;
-    border-top: 1px solid #ded9d1;
-    margin-top: 20px;
-    padding-top: 15px;
-}
-
-.detalle button {
-    background: none;
-    border: none;
-    border-bottom: 1px solid #29251f;
-    font-family: Georgia, serif;
-    cursor: pointer;
-}
-
-@media (max-width: 700px) {
-
-    .libros {
-        grid-template-columns: 1fr;
+        margin-bottom: 55px;
     }
 
-    .encabezado-libros h1 {
-        font-size: 45px;
+
+    .detalle {
+
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 15px;
     }
 
-    .menu {
-        padding: 0 25px;
-    }
-
-    .enlaces {
-        gap: 18px;
-    }
-}
-
-/* MENÚ ALTHEA */
-
-.pagina-libros {
-    background: #f5f1eb;
-    color: #29251f;
-}
-
-.menu {
-    height: 80px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 7%;
-    border-bottom: 1px solid #ded9d1;
-}
-
-.logo {
-    color: #29251f;
-    text-decoration: none;
-    font-size: 23px;
-    letter-spacing: 6px;
-}
-
-.enlaces {
-    display: flex;
-    gap: 30px;
-}
-
-.enlaces a {
-    color: #706a61;
-    text-decoration: none;
-    font-size: 15px;
-}
-
-.enlaces a:hover {
-    color: #29251f;
-}
-
-.seleccionado {
-    color: #29251f !important;
-    border-bottom: 1px solid #29251f;
-    padding-bottom: 5px;
-}
-
-.encabezado-libros {
-    max-width: 1100px;
-    margin: auto;
-    padding: 90px 7% 70px;
-}
-
-.etiqueta {
-    font-size: 11px;
-    letter-spacing: 4px;
-    color: #817a70;
-}
-
-.encabezado-libros h1 {
-    font-size: 60px;
-    font-weight: normal;
-    line-height: 1.1;
-    margin: 25px 0;
-}
-
-.descripcion {
-    max-width: 500px;
-    color: #706a61;
-    font-size: 18px;
-    line-height: 1.6;
-}
-
-.catalogo {
-    max-width: 1100px;
-    margin: auto;
-    padding: 0 7% 100px;
-}
-
-.titulo-catalogo {
-    border-top: 1px solid #ded9d1;
-    padding-top: 20px;
-    margin-bottom: 45px;
-}
-
-.titulo-catalogo p {
-    font-size: 11px;
-    letter-spacing: 3px;
-    color: #817a70;
-}
-
-.libros {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 60px 35px;
-}
-
-.portada {
-    height: 450px;
-    background: #ebe6de;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.portada img {
-    height: 380px;
-    max-width: 80%;
-    object-fit: contain;
-    box-shadow: 0 15px 30px rgba(0,0,0,.15);
-    transition: .4s;
-}
-
-.libro:hover img {
-    transform: scale(1.03);
-}
-
-.informacion {
-    padding-top: 20px;
-}
-
-.genero {
-    font-size: 10px;
-    letter-spacing: 3px;
-    color: #8a8278;
-}
-
-.informacion h2 {
-    font-size: 24px;
-    font-weight: normal;
-    margin: 10px 0 5px;
-}
-
-.autor {
-    color: #777067;
-}
-
-.detalle {
-    display: flex;
-    justify-content: space-between;
-    border-top: 1px solid #ded9d1;
-    margin-top: 20px;
-    padding-top: 15px;
-}
-
-.detalle button {
-    background: none;
-    border: none;
-    border-bottom: 1px solid #29251f;
-    font-family: Georgia, serif;
-    cursor: pointer;
-}
-
-@media (max-width: 700px) {
-
-    .libros {
-        grid-template-columns: 1fr;
-    }
-
-    .encabezado-libros h1 {
-        font-size: 45px;
-    }
-
-    .menu {
-        padding: 0 25px;
-    }
-
-    .enlaces {
-        gap: 18px;
-    }
-}
-
-/* DETALLE DEL LIBRO */
-
-.pagina-libro {
-    background: #f5f1eb;
-    color: #29251f;
-}
-
-.detalle-libro {
-    max-width: 1100px;
-    margin: auto;
-    padding: 80px 7%;
-    display: grid;
-    grid-template-columns: 0.9fr 1.1fr;
-    gap: 80px;
-    align-items: center;
-}
-
-.imagen-detalle {
-    background: #ebe6de;
-    height: 600px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.imagen-detalle img {
-    height: 500px;
-    max-width: 85%;
-    object-fit: contain;
-    box-shadow: 0 20px 40px rgba(0,0,0,.15);
-}
-
-.contenido-detalle {
-    max-width: 480px;
-}
-
-.genero {
-    font-size: 11px;
-    letter-spacing: 4px;
-    color: #817a70;
-}
-
-.contenido-detalle h1 {
-    font-size: 55px;
-    font-weight: normal;
-    line-height: 1.05;
-    margin: 25px 0 15px;
-}
-
-.autor-detalle {
-    color: #706a61;
-    font-size: 18px;
-}
-
-.descripcion-libro {
-    color: #706a61;
-    font-size: 18px;
-    line-height: 1.7;
-    margin: 35px 0;
-}
-
-.precio-detalle {
-    font-size: 20px;
-    margin-bottom: 25px;
-}
-
-.comprar-detalle {
-    background: #29251f;
-    color: #f5f1eb;
-    border: none;
-    padding: 15px 35px;
-    font-family: Georgia, serif;
-    font-size: 15px;
-    cursor: pointer;
-}
-
-.comprar-detalle:hover {
-    opacity: .8;
-}
-
-.volver {
-    display: block;
-    margin-top: 25px;
-    color: #706a61;
-    text-decoration: none;
-    font-size: 14px;
-}
-
-.volver:hover {
-    color: #29251f;
-}
-
-@media (max-width: 700px) {
-
-    .detalle-libro {
-        grid-template-columns: 1fr;
-        gap: 40px;
-    }
-
-    .imagen-detalle {
-        height: 450px;
-    }
-
-    .imagen-detalle img {
-        height: 380px;
-    }
-
-    .contenido-detalle h1 {
-        font-size: 42px;
-    }
 }

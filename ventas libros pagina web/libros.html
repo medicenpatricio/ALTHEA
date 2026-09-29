@@ -1,34 +1,65 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
+
     <meta charset="UTF-8">
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Libros - ALTHEA</title>
 
     <link rel="stylesheet" href="style.css">
+
 </head>
+
 
 <body class="pagina-libros">
 
+
+    <!-- =========================
+         MENÚ
+         ========================= -->
+
     <nav class="menu">
-        <a href="index.html" class="logo">ALTHEA</a>
+
+        <a href="index.html" class="logo">
+            ALTHEA
+        </a>
+
 
         <div class="enlaces">
-            <a href="index.html">Inicio</a>
-            <a href="libros.html" class="seleccionado">Libros</a>
+
+            <a href="index.html">
+                Inicio
+            </a>
+
+            <a href="libros.html" class="seleccionado">
+                Libros
+            </a>
+
         </div>
+
     </nav>
 
 
+
+    <!-- =========================
+         ENCABEZADO
+         ========================= -->
+
     <header class="encabezado-libros">
 
-        <p class="etiqueta">LA COLECCIÓN ALTHEA</p>
+        <p class="etiqueta">
+            LA COLECCIÓN ALTHEA
+        </p>
+
 
         <h1>
             Historias que<br>
             esperan ser vividas.
         </h1>
+
 
         <p class="descripcion">
             Una selección de historias para descubrir,
@@ -38,38 +69,99 @@
     </header>
 
 
+
+    <!-- =========================
+         CATÁLOGO
+         ========================= -->
+
     <main class="catalogo">
 
+
         <div class="titulo-catalogo">
-            <p>LIBROS DISPONIBLES</p>
+
+            <p>
+                LIBROS DISPONIBLES
+            </p>
+
         </div>
 
+
+
+        <!-- =========================
+             BUSCADOR
+             ========================= -->
+
+        <div class="buscador">
+
+            <p>
+                DESCUBRE UNA HISTORIA
+            </p>
+
+
+            <input
+                type="text"
+                id="buscar-libro"
+                placeholder="Título, autor o género..."
+                autocomplete="off"
+            >
+
+        </div>
+
+
+
+        <!-- =========================
+             LIBROS
+             ========================= -->
 
         <section class="libros">
 
 
-            <article class="libro">
+            <!-- =========================
+                 CIEN AÑOS DE SOLEDAD
+                 ========================= -->
 
-                <a href="cien-años.html"class="portada">
-                    <img src="imagenes/cien-años.png"
-                         alt="Portada de Cien años de soledad">
+            <article
+                class="libro"
+                data-busqueda="cien años de soledad gabriel garcia marquez novela">
+
+                <a
+                    href="cien-años.html"
+                    class="enlace-portada">
+
+                    <img
+                        src="imagenes/cien-años.png"
+                        alt="Portada de Cien años de soledad">
+
                 </a>
+
 
                 <div class="informacion">
 
-                    <p class="genero">NOVELA</p>
+                    <p class="genero">
+                        NOVELA
+                    </p>
 
-                    <h2>Cien años de soledad</h2>
+
+                    <h2>
+                        Cien años de soledad
+                    </h2>
+
 
                     <p class="autor">
                         Gabriel García Márquez
                     </p>
 
+
                     <div class="detalle">
 
-                        <span>$45.000</span>
+                        <span>
+                            $45.000
+                        </span>
 
-                        <button>Comprar</button>
+
+                        <a href="cien-años.html">
+                            Descubrir historia →
+                        </a>
 
                     </div>
 
@@ -79,28 +171,52 @@
 
 
 
-            <article class="libro">
+            <!-- =========================
+                 EL PRINCIPITO
+                 ========================= -->
 
-                <a href="Principito.html" class="portada">
-                    <img src="imagenes/Principito.png"
-                         alt="Portada de El Principito">
+            <article
+                class="libro"
+                data-busqueda="el principito antoine de saint exupery clasico">
+
+                <a
+                    href="Principito.html"
+                    class="enlace-portada">
+
+                    <img
+                        src="imagenes/Principito.png"
+                        alt="Portada de El principito">
+
                 </a>
+
 
                 <div class="informacion">
 
-                    <p class="genero">CLÁSICO</p>
+                    <p class="genero">
+                        CLÁSICO
+                    </p>
 
-                    <h2>El principito</h2>
+
+                    <h2>
+                        El principito
+                    </h2>
+
 
                     <p class="autor">
                         Antoine de Saint-Exupéry
                     </p>
 
+
                     <div class="detalle">
 
-                        <span>$30.000</span>
+                        <span>
+                            $30.000
+                        </span>
 
-                        <button>Comprar</button>
+
+                        <a href="Principito.html">
+                            Descubrir historia →
+                        </a>
 
                     </div>
 
@@ -110,28 +226,52 @@
 
 
 
-            <article class="libro">
+            <!-- =========================
+                 DON QUIJOTE
+                 ========================= -->
 
-                <a href="Quijote.html" class="portada">
-                    <img src="imagenes/Quijote.png"
-                         alt="Portada de Don Quijote de la Mancha">
+            <article
+                class="libro"
+                data-busqueda="don quijote de la mancha miguel de cervantes clasico aventura">
+
+                <a
+                    href="Quijote.html"
+                    class="enlace-portada">
+
+                    <img
+                        src="imagenes/Quijote.png"
+                        alt="Portada de Don Quijote de la Mancha">
+
                 </a>
+
 
                 <div class="informacion">
 
-                    <p class="genero">CLÁSICO</p>
+                    <p class="genero">
+                        CLÁSICO
+                    </p>
 
-                    <h2>Don Quijote de la Mancha</h2>
+
+                    <h2>
+                        Don Quijote de la Mancha
+                    </h2>
+
 
                     <p class="autor">
                         Miguel de Cervantes
                     </p>
 
+
                     <div class="detalle">
 
-                        <span>$50.000</span>
+                        <span>
+                            $50.000
+                        </span>
 
-                        <button>Comprar</button>
+
+                        <a href="Quijote.html">
+                            Descubrir historia →
+                        </a>
 
                     </div>
 
@@ -141,28 +281,52 @@
 
 
 
-            <article class="libro">
+            <!-- =========================
+                 LA DIVINA COMEDIA
+                 ========================= -->
 
-                <a href="Divina.html" class="portada">
-                    <img src="imagenes/Divina.png"
-                         alt="Portada de La Divina Comedia">
+            <article
+                class="libro"
+                data-busqueda="la divina comedia dante alighieri poesia clasico">
+
+                <a
+                    href="Divina.html"
+                    class="enlace-portada">
+
+                    <img
+                        src="imagenes/Divina.png"
+                        alt="Portada de La Divina Comedia">
+
                 </a>
+
 
                 <div class="informacion">
 
-                    <p class="genero">POESÍA</p>
+                    <p class="genero">
+                        POESÍA
+                    </p>
 
-                    <h2>La Divina Comedia</h2>
+
+                    <h2>
+                        La Divina Comedia
+                    </h2>
+
 
                     <p class="autor">
                         Dante Alighieri
                     </p>
 
+
                     <div class="detalle">
 
-                        <span>$50.000</span>
+                        <span>
+                            $50.000
+                        </span>
 
-                        <button>Comprar</button>
+
+                        <a href="Divina.html">
+                            Descubrir historia →
+                        </a>
 
                     </div>
 
@@ -175,5 +339,14 @@
 
     </main>
 
+
+
+    <!-- =========================
+         JAVASCRIPT
+         ========================= -->
+
+    <script src="script.js" defer></script>
+
 </body>
+
 </html>
