@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Libros - ALTHEA</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="pagina-libros">
+
+<nav class="menu">
+    <a href="index.html">Inicio</a>
+    <a href="libros.html">Libros</a>
+    <a href="carrito.html">🛒 Carrito</a>
+</nav>
+
+
+    <header class="encabezado-libros">
+
+        <p class="etiqueta">LA COLECCIÓN ALTHEA</p>
+
+        <h1>
+            Historias que<br>
+            esperan ser vividas.
+        </h1>
+
+        <p class="descripcion">
+            Una selección de historias para descubrir,
+            recordar y quizás llevar contigo.
+        </p>
+
+    </header>
+
+
+    <main class="catalogo">
+<div class="titulo-catalogo">
+    <p>LIBROS DISPONIBLES</p>
+</div>
+
+<div class="buscador">
+
+    <div class="campo-busqueda">
+        <span>⌕</span>
+        <input 
+            type="text" 
+            id="buscarLibro" 
+            placeholder="Buscar una historia..."
+        >
+    </div>
+
+    <p id="mensajeBusqueda"></p>
+
+</div>
+
+<section class="libros">
+
+            <article class="libro">
+
+                <a href="cien-años.html"class="portada">
+                    <img src="imagenes/cien-años.png"
+                         alt="Portada de Cien años de soledad">
+                </a>
+
+                <div class="informacion">
+
+                    <p class="genero">NOVELA</p>
+
+                    <h2>Cien años de soledad</h2>
+
+                    <p class="autor">
+                        Gabriel García Márquez
+                    </p>
+
+                    <div class="detalle">
+
+                        <span>$45.000</span>
+
+                        <button 
+    class="comprar"
+    data-id="cien-anos"
+    data-titulo="Cien años de soledad"
+    data-precio="45000"
+    data-imagen="imagenes/cien-años.png">
+    Comprar
+</button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <article class="libro">
+
+                <a href="Principito.html" class="portada">
+                    <img src="imagenes/Principito.png"
+                         alt="Portada de El Principito">
+                </a>
+
+                <div class="informacion">
+
+                    <p class="genero">CLÁSICO</p>
+
+                    <h2>El principito</h2>
+
+                    <p class="autor">
+                        Antoine de Saint-Exupéry
+                    </p>
+
+                    <div class="detalle">
+
+                        <span>$30.000</span>
+
+                       <button 
+    class="comprar"
+    data-id="principito"
+    data-titulo="El principito"
+    data-precio="30000"
+    data-imagen="imagenes/Principito.png">
+    Comprar
+</button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <article class="libro">
+
+                <a href="Quijote.html" class="portada">
+                    <img src="imagenes/Quijote.png"
+                         alt="Portada de Don Quijote de la Mancha">
+                </a>
+
+                <div class="informacion">
+
+                    <p class="genero">CLÁSICO</p>
+
+                    <h2>Don Quijote de la Mancha</h2>
+
+                    <p class="autor">
+                        Miguel de Cervantes
+                    </p>
+
+                    <div class="detalle">
+
+                        <span>$50.000</span>
+
+                        <button 
+    class="comprar"
+    data-id="quijote"
+    data-titulo="Don Quijote de la Mancha"
+    data-precio="50000"
+    data-imagen="imagenes/Quijote.png">
+    Comprar
+</button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+
+            <article class="libro">
+
+                <a href="Divina.html" class="portada">
+                    <img src="imagenes/Divina.png"
+                         alt="Portada de La Divina Comedia">
+                </a>
+
+                <div class="informacion">
+
+                    <p class="genero">POESÍA</p>
+
+                    <h2>La Divina Comedia</h2>
+
+                    <p class="autor">
+                        Dante Alighieri
+                    </p>
+
+                    <div class="detalle">
+
+                        <span>$50.000</span>
+
+                        <button 
+    class="comprar"
+    data-id="divina"
+    data-titulo="La Divina Comedia"
+    data-precio="50000"
+    data-imagen="imagenes/Divina.png">
+    Comprar
+</button>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+
+        </section>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
