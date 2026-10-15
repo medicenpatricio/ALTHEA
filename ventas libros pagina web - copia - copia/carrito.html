@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Carrito - ALTHEA</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="pagina-carrito">
+
+    <header>
+
+        <nav class="menu">
+            <a href="index.html">Inicio</a>
+            <a href="libros.html">Libros</a>
+        </nav>
+
+    </header>
+
+
+    <main class="carrito">
+
+        <h1>Tu carrito</h1>
+
+        <div id="lista-carrito">
+
+            <p class="carrito-vacio">
+                Tu carrito está vacío.
+            </p>
+
+        </div>
+
+
+        <div class="resumen-carrito">
+
+            <h2>Total</h2>
+
+            <p id="total-carrito">
+                $0
+            </p>
+
+            <button id="finalizarCompra">
+                Finalizar compra
+            </button>
+
+        </div>
+
+        <!-- FORMULARIO DE COMPRA -->
+
+        <section id="formularioCompra" style="display: none;">
+
+            <h2>Finaliza tu compra</h2>
+
+            <p>Completa tus datos para continuar con tu pedido.</p>
+
+            <form id="datosComprador">
+
+                <label for="nombres">Nombres</label>
+                <input type="text" id="nombres" name="nombres" required>
+
+                <label for="apellidos">Apellidos</label>
+                <input type="text" id="apellidos" name="apellidos" required>
+
+                <label for="correo">Correo electrónico</label>
+                <input type="email" id="correo" name="correo" required>
+
+                <label for="telefono">Número de contacto</label>
+                <input type="tel" id="telefono" name="telefono" required>
+
+                <label for="cedula">Número de cédula</label>
+                <input type="text" id="cedula" name="cedula"
+                    inputmode="numeric" required>
+
+                <label for="metodoPago">¿Cómo quieres pagar?</label>
+                <select id="metodoPago" name="metodoPago" required>
+                    <option value="">Selecciona un método</option>
+                    <option value="Transferencia bancaria">Transferencia bancaria</option>
+                    <option value="Nequi">Nequi</option>
+                    <option value="Daviplata">Daviplata</option>
+                    <option value="Pago contra entrega">Pago contra entrega</option>
+                </select>
+
+                <label for="opiniones">Opiniones para mejorar ALTHEA (opcional)</label>
+                <textarea id="opiniones" name="opiniones"
+                    rows="4"
+                    placeholder="¿Qué te gustaría que mejoráramos?"></textarea>
+
+                <button type="submit">Confirmar pedido</button>
+
+            </form>
+
+        </section>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>

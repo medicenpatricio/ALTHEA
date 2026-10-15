@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>La divina comedia - ALTHEA</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer>
+ </script>
+
+</head>
+
+<body class="pagina-libro
+libro-Divina">
+
+    <nav class="menu">
+
+        <a href="index.html" class="logo">ALTHEA</a>
+                <a href="#" id="abrirCarrito">
+            🛒 Carrito
+        </a>
+
+    </nav>
+
+
+    <main class="detalle-libro">
+
+        <div class="imagen-detalle">
+
+            <img src="imagenes/Divina.png"
+                 alt="Portada de La Divina Comedia">
+
+        </div>
+
+
+        <div class="contenido-detalle">
+
+            <p class="genero">CLÁSICO</p>
+
+            <h1>La Divina Comedia</h1>
+
+            <p class="autor-detalle">
+                Dante Alighieri
+            </p>
+
+            <p class="descripcion-libro">
+                La Divina Comedia es una épica poema en tres partes que narra el viaje del autor a través de los tres mundos de la vida después de la muerte.
+            </p>
+
+            <div class="precio-detalle">
+                $50.000
+            </div>
+
+            <button class="comprar-detalle comprar"
+            data-id="Divina"
+            data-titulo="La divina comedia"
+            data-precio="50000"
+            data-imagen="imagenes/Divina.png">
+                Comprar
+            </button>
+
+            <a href="libros.html" class="volver">
+                ← Volver a libros
+            </a>
+
+        </div>
+
+    </main>
+
+    <!-- VENTANA DEL CARRITO -->
+
+<div id="ventanaCarrito" class="ventana-carrito">
+
+    <div class="cabecera-carrito">
+
+        <h2>Mi carrito</h2>
+
+        <button id="cerrarCarrito">x</button>
+
+    </div>
+
+    <div id="listaCarritoFlotante">
+
+        <p>Tu carrito está vacío.</p>
+
+    </div>
+
+    <div class="pie-carrito">
+
+        <p>
+            Total:
+            <strong id="totalCarritoFlotante">$0</strong>
+        </p>
+
+        <button id="finalizarCompraFlotante">
+            Comprar
+        </button>
+
+    </div>
+
+</div>
+
+</body>
+
+</html>
